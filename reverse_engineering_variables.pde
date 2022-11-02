@@ -2,7 +2,7 @@ int x = 50;
 int y = 60;
 
 int dx = 15; 
-int dy = 8; 
+int dy = 10; 
 
 void setup() {
   size(600, 600);
@@ -20,8 +20,8 @@ void draw() {
   }
   
   if ( y >= height ) {
-    dy = -8;
+    dy = -10;
   } else if ( y <= 0 ) {
-    dy = 8;
+    dy = 10;
   }
 }
