@@ -1,8 +1,8 @@
 int x = 50;
 int y = 60;
 
-int dx = 10; 
-int dy = 6; 
+int dx = 15; 
+int dy = 8; 
 
 void setup() {
   size(600, 600);
@@ -14,14 +14,14 @@ void draw() {
   x = x + dx;
   y = y + dy; 
   if ( x >= width ) {
-    dx = -10; 
+    dx = -15; 
   } else if ( x <= 0 ) {
-    dx = 10;
+    dx = 15;
   }
   
   if ( y >= height ) {
-    dy = -6;
+    dy = -8;
   } else if ( y <= 0 ) {
-    dy = 6;
+    dy = 8;
   }
 }
