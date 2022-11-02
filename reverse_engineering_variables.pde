@@ -15,14 +15,14 @@ void draw() {
   x = x + dx;
   y = y + dy; 
   if ( x >= width ) {
-    dx = -15; 
+    dx = -dx; 
   } else if ( x <= 0 ) {
-    dx = 15;
+    dx = -dx;
   }
   
   if ( y >= height ) {
-    dy = -10;
+    dy = -dy;
   } else if ( y <= 0 ) {
-    dy = 10;
+    dy = -dy;
   }
 }
