@@ -10,6 +10,7 @@ void setup() {
 
 void draw() {
   background(100);
+  fill(129, 219, 222);
   circle(x, y, 35); 
   x = x + dx;
   y = y + dy; 
