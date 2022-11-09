@@ -1,11 +1,19 @@
+int x = 70;
+int y = 150;
+int r = 0;
+
 void setup() { // called once
-size(600, 600);
-background(5, 10, 90);
+size(1000, 1000);
+
 }
 
 void draw() { // called once
+background(5, 10, 90);
+translate(500, 500);
 stroke(290, 390, 250);
 strokeWeight(2);
+ rotate(radians(r));
+ r = r + 1;
 //face
 fill(0, 90, 100);
 circle(220, 120, 195);
