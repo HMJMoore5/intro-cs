@@ -1,34 +1,24 @@
-//help from Will
-
 void setup () {
   size(600,600); 
 }
 
 void draw() {
   noStroke();
+  rect(120, 80, 220, 220);
   fill(145, 200, 100);
- star();
+ square();
   
   translate(300, 50);
-  star();
+  square();
   
    translate(50, 200);
-   star();
+   square();
 }
 
-void star() {
-  beginShape();
-  vertex(170,80); //highest 
-  vertex(250, 300);
-   vertex(70, 160);
-   vertex(300, 160);
-  vertex(130, 300);
-  endShape(); 
+void square() {
+push();
+translate(50, 50, 50, 50);
+pop();
 }
 
-void mousePressed() {
-  println("coordinates are: "
-  + mouseX + ","
-  + mouseY);
-  circle(mouseX, mouseY, 30);
 }
