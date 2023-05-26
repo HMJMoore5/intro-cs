@@ -52,6 +52,8 @@ void gameScreen() {
   moveBlock();
   Collision();
   
+  
+// Background suggested by Matthew  
 fill(99, 173, 168);
  textAlign(CENTER);
  text("Don't mess up!!", 100, 100);
